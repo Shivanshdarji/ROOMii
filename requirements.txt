@@ -1,0 +1,30 @@
+# Core Framework
+flask
+flask-cors
+flask-socketio
+python-socketio[client]
+
+# AI & ML
+openai
+deepface
+tensorflow
+transformers
+
+# Computer Vision (headless for better performance)
+opencv-python-headless
+
+# Audio
+gTTS
+pydub
+
+# Async & Performance
+asyncio
+aiofiles
+python-dotenv
+
+# Data & Storage
+aiosqlite
+
+# Utilities
+python-dateutil
+pytz

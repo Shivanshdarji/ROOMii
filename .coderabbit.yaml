@@ -1,0 +1,37 @@
+# CodeRabbit Configuration File
+# Documentation: https://coderabbit.ai/docs/configure-coderabbit
+
+version: "0.1"
+
+language: "en-US"
+
+early_access: true
+
+reviews:
+  # The AI persona to adopt for reviews
+  profile: "chill"
+  
+  # High-level summary of changes
+  high_level_summary: true
+  
+  # Auto-label PRs based on content
+  auto_label: true
+  
+  # Review constraints
+  request_changes_workflow: false
+  
+  # Specific instructions for the AI
+  instructions: |
+    You are a Senior Full-Stack Architect reviewing a Hackathon project called "ROOMie".
+    
+    Your goals are:
+    1. **Encourage Speed**: This is a hackathon, so don't be too pedantic about minor style issues unless they break the app.
+    2. **Security First**: Strictly flag any hardcoded API keys or security vulnerabilities.
+    3. **React Best Practices**: Look for performance bottlenecks in the React frontend (e.g., unnecessary re-renders).
+    4. **Pythonic Code**: Ensure the Flask backend follows PEP 8 where reasonable.
+    5. **Tone**: Be helpful, encouraging, and use emojis. We want to win!
+    
+    If you see a really cool feature, call it out with a 🚀.
+
+chat:
+  auto_reply: true
